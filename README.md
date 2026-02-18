@@ -161,15 +161,6 @@ Config-driven environment variables
 No hardcoded paths
 Clean blueprint registration
 
-🎯 Alignment With Resume Description
-
-✔ Built multi-module AI web application using Flask Blueprints
-✔ Developed NLP-based ML models for emotional classification
-✔ Performed text preprocessing, vectorization & feature extraction
-✔ Deployed trained models using Flask for real-time predictions
-✔ Designed modular architecture separating ML, services, and UI
-✔ Implemented conversational AI with escalation logic
-
 🔮 Future Improvements
 
 Replace rule-based chatbot with LLM integration
