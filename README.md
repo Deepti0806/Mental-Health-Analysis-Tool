@@ -28,6 +28,7 @@ The system classifies user text into stress levels and adapts conversational res
 
 🧩 Architecture
 
+```
 mentalhealthai/
 │
 ├── mental_health/                # Flask Blueprint
@@ -56,6 +57,8 @@ mentalhealthai/
 ├── app.py                        # Application factory
 ├── config.py                     # Central configuration
 └── requirements.txt
+
+```
 
 🔍 Features
 
