@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analyze Stress</title>
+    <link rel="stylesheet" href="{{ url_for('mental_health.static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>Describe How You Feel</h2>
+
+        <form method="POST">
+            <textarea name="text" placeholder="Share what you're experiencing..." required></textarea>
+
+            <select name="age_group" required>
+                <option value="Teen">Teen</option>
+                <option value="Adult">Adult</option>
+                <option value="Senior">Senior</option>
+            </select>
+
+            <button type="submit">Analyze Stress</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

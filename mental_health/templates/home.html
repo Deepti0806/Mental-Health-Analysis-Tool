@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health AI</title>
+    <link rel="stylesheet" href="{{ url_for('mental_health.static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="card" style="text-align:center;">
+        <h1>Mental Health Analysis Tool</h1>
+        <p style="color:#64748B; margin-bottom:25px;">
+            AI-powered emotional analysis & supportive conversation system.
+        </p>
+        <a href="{{ url_for('mental_health.analyze') }}">
+            <button>Start Analysis</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

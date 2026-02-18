@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Support Chat</title>
+    <link rel="stylesheet" href="{{ url_for('mental_health.static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+
+        <h2>AI Support Assistant</h2>
+
+        <!-- Stress Badge -->
+        {% if stress_level == "Low" %}
+            <div class="badge low">Stress Level: Low</div>
+        {% elif stress_level == "Moderate" %}
+            <div class="badge moderate">Stress Level: Moderate</div>
+        {% else %}
+            <div class="badge high">Stress Level: High</div>
+        {% endif %}
+
+        <!-- Chat Messages -->
+        <div class="chat-box" style="display:flex; flex-direction:column;">
+            {% for msg in chat_history %}
+                <div class="chat-message {{ msg.role }}">
+                    {{ msg.message }}
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Chat Form -->
+        <form method="POST" class="chat-form">
+            <input type="text" name="message" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
